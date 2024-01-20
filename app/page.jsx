@@ -1,7 +1,8 @@
+import Feed from "@/components/Feed"
 
 const Home = () => {
   return (
-    <section className="w-full flex-center flex-col ">
+    <section className="w-full flex-center flex-col m:flex-wrapp">
       <h1 className="head_text text-center">
         Descubra & Compartilhe
         <br className="max-md:hidden" />
@@ -16,6 +17,8 @@ const Home = () => {
       </p>
 
       {/* Feed Componente */}
+
+      <Feed />
     </section>
   )
 }
