@@ -11,14 +11,16 @@ const RouteLayout = ({children}) => {
   return (
     <html lang='pt-Ao'>
         <body>
-            <div className='main'>
-                <div className='gradiente'></div>
-            </div>
+            <Provider>
+                <div className='main'>
+                    <div className='gradiente'></div>
+                </div>
 
-            <main className='app'>
-                <Nav />
-                {children}
-            </main>
+                <main className='app'>
+                    <Nav />
+                    {children}
+                </main>
+            </Provider>
         </body>
     </html>
   )
